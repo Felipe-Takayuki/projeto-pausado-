@@ -1,0 +1,231 @@
+
+
+
+
+.escola{
+    margin: 5px;
+    display: inline-block;
+    border-radius: 10px ;
+    width: 48%;
+    height: 250px;
+    background-color: rgb(85, 154, 182);
+}
+.outras{
+
+    display: inline-block;
+    border-radius: 10px ;
+    background-color: rgb(85, 154, 182);
+    width: 48%;
+    height: 250px;
+     
+}
+.AoVivo div{
+    display: inline-block;
+    margin-top:10px ;
+}
+.escola a{
+ text-decoration: none;
+
+}
+.escola:hover{
+    transition: all 0.4s;
+    width: 49%;
+    height: 251px;
+}
+.outras:hover{
+    transition: all 0.4s;
+    width: 49%;
+    height: 251px;
+}
+.escola h1{
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(214, 205, 205);
+}
+
+   @media screen and (max-width: 600px) {
+   /* Estilos */
+   }
+   @media screen and (max-width:300px){
+
+   }
+body{
+    background-color: rgb(89, 115, 126);
+}
+
+.outras h1{ 
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(214, 205, 205);
+}
+.incatorLive{
+ 
+height: 30px;
+width: 100%;
+}
+.incatorLive h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+color: rgb(214, 205, 205);
+}
+.incatorgravados{
+ 
+    height: 30px;
+    width: 100%;
+    }
+.indicatorgravados h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+color: rgb(214, 205, 205);
+    }
+.gravados div{
+    
+    margin-top:2.5px ;
+    display: inline-block;
+}
+.gravados a{
+text-decoration: none;
+
+}
+.gravados h1{
+    font-size: 2.5vh;
+    text-align: center;
+    
+    
+}
+
+.g12{
+    background-color: rgb(85, 154, 182);
+border-radius: 5px;
+height:  200px;
+width: 98%;
+}
+.materias{
+ display: inline-block;
+}
+
+.g12:hover{
+    transition: all 1s;
+    height: 202px;
+    width: 99%;
+  
+}
+
+/* APP BAR */
+input[type="checkbox"]{
+    display: none;
+}
+
+  
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+#icone img{
+  width: 40px;
+}
+#check{
+	display: none;
+	
+}
+
+.barra{
+    background-color: rgb(89, 115, 126);
+	height: 100%;
+	width: 200px;
+    opacity: 0.9;
+	position: absolute;
+	left: -200px;
+	transition: all .2s linear;
+}
+
+.link{
+	list-style: none;
+	
+}
+
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a{
+ 
+	text-decoration: none;
+}
+
+.link {
+ 
+	margin: 5px;
+    
+}
+.link h1{
+    color: #4e4e50;
+	font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#check:checked ~ .barra nav a .link{
+
+        
+		margin-top: 0;
+		transition-delay: .1s;
+}
+#check:checked ~ .barra{
+		transform: translateX(200px);
+
+}
+
+nav ul{
+    list-style: none;
+}
+
+.logoclass{
+    margin: 10px;
+    text-align: center;
+    width: 90%;
+    position: absolute;
+}
+.logoclass img{
+    width: 200px;
+}
+.link h1:hover{
+    color: #2d2d2e;
+}
+
+
+
+
+
+.logoclass1 img{
+  
+    
+    margin-top:50px;
+    width:100px;
+}
+.logoclass1{
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

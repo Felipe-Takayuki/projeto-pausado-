@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   text-transform: capitalize;
+   transition: all .2s linear;
+}
+
+body{
+  background-color: rgb(160, 203, 211);
+}
+
+.container{
+  padding:25px 10%;
+  text-align: start;
+}
+
+
+.container #search-box{
+  border-radius: 10px;
+  width: 600px;
+  padding:12px 15px;
+  font-size: 20px;
+}
+
+.container .image-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:20px;
+  padding-top: 30px;
+  width: 100%;
+  height: 20%;
+}
+.image-container div{
+  display: inline-block;
+}
+.image iframe{
+  width: 100%;
+}
+.image {
+  background-color: rgb(85, 154, 182);
+}
+.container .image-container iframe{
+  padding:15px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+
+  width: 100%;
+  border-radius: 5px;
+  animation: fadeIn .2s linear;
+}
+
+@keyframes fadeIn {
+  0%{
+    transform: scale(.5) translateY(-10px);
+    opacity: 0;
+  }
+}
+
+.container .image-container .image img{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.container .image-container .image h3{
+  font-size: 20px;
+}
+
+@media (max-width:768px){
+  .container #search-box{
+    width: 100%;
+  }
+}
+
+@media (max-width:450px){
+  .container{
+    padding:25px 20px;
+  }
+
+  .container .image-container .image{
+    width: 100%;
+  }
+  input[type="checkbox"]{
+    display: none;
+}
+}
+  
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+#icone img{
+  width: 40px;
+}
+#check{
+	display: none;
+	
+}
+input[type="checkbox"]{
+  display: none;
+}
+
+
+#icone {
+cursor: pointer;
+padding: 15px;
+position: absolute;
+z-index: 1;
+}
+#icone img{
+width: 40px;
+}
+#check{
+display: none;
+
+}
+
+.barra{
+  background-color: rgb(89, 115, 126);
+height: 100%;
+width: 200px;
+  opacity: 0.9;
+position: absolute;
+left: -200px;
+transition: all .2s linear;
+}
+
+.link{
+list-style: none;
+
+}
+
+nav{
+width: 100%;
+position: absolute;
+top: 60px;
+}
+nav a{
+
+text-decoration: none;
+}
+
+.link {
+
+margin: 5px;
+  
+}
+.link h1{
+  color: #4e4e50;
+font-size: 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link h1:hover{
+  color: #2d2d2e;
+}
+
+#check:checked ~ .barra nav a .link{
+
+      
+  margin-top: 0;
+  transition-delay: .1s;
+}
+#check:checked ~ .barra{
+  transform: translateX(200px);
+
+}
+
+nav ul{
+  list-style: none;
+}
+body{
+  background-color: rgb(89, 115, 126);
+}

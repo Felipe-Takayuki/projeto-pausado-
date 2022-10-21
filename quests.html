@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quis</title>
+    <link rel="shortcut icon" href="images/Icones/favicon.ico" type="image/x-icon">
+     <link rel="stylesheet" href="css/quests.css">
+      <link rel="stylesheet" href="css/appBar.css">
+  
+</head>
+<body>
+       <div class="appbar">      
+     <input type="checkbox" id="check">
+     <label for="check" id="icone"><img src="images/Icones/cardapio.png"/></label>
+     <div class="barra">	
+         <nav>
+             <div>
+             <ul>
+           <li> <a href="Home.html"><div class="link"><h1>Home</h1></div></a></li>
+            <li> <a href="chat.html"><div class="link"><h1>chat</h1></div></a></li>
+             <li><a href="quests.html"><div class="link"><h1>Quiz</h1></div></a></li>
+         </ul>
+         </div>
+         </nav>	
+     </div>
+ <div class="title"><h1>
+     Quiz</h1></div>
+ </div>
+
+        <div class="area">
+        <form id="form">
+           
+            <div class="questao">
+            <div class="duvidas"><h1>Quanto é 1 + 1000 * 20 * 11</h1></div>
+            
+            <div class="alternative1">
+            <div><input name="radio" type="radio" value="errado1" id="incorreto0"> 
+            </div>
+            <div><h1>12</h1></div>
+            </div>
+            <div class="alternative1">
+            <div><input name="radio" type="radio" value="errado2" id="incorreto1">
+        </div>
+        <div><h1>440002</h1></div>
+        </div>
+        <div class="alternative1">
+          <div>  <input name="radio" type="radio" value="certo" id="correto">
+        </div> 
+        <div><h1>220001</h1></div>
+        </div>
+        <div class="alternative1">
+          <div>  <input name="radio" type="radio" value="errado3" id="incorreto2">
+        </div>
+        <div><h1>440003</h1></div>
+    </div>
+            <input type="submit" id="botao" onClick="responder()" value="Responder
+            "/>
+            </div>
+        </div>
+        <div id="correto1"><h1>Correto!</h1></div>
+        <div id="incorreto"><h1>incorreto</h1></div>
+    
+        </form>
+          
+</div>
+   <div class="botaoprox"><a href="prox.html"><input type="button" value="Próxima Questão"></a>
+   </div>
+   
+</body>
+<script>
+    function responder() {
+
+var abc = document.getElementById("correto");
+var form = document.getElementById("form");
+
+form.addEventListener('submit', function(event) {
+  if (abc.checked) {
+    document.getElementById("correto1").style.display = 'block';
+    document.getElementById("incorreto").style.display = 'none';
+
+  } else {
+    document.getElementById("correto1").style.display = 'none';
+    document.getElementById("incorreto").style.display = 'block';
+  }
+  event.preventDefault();
+});
+
+}
+
+</script>
+</html>

@@ -1,0 +1,48 @@
+.area {
+    background-image: linear-gradient( rgb(85, 154, 182),  rgb(89, 115, 126));
+    border-radius: 10px;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+}
+
+.entrar input{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma;
+    font-size: 20px;
+    cursor: pointer;
+}
+.entrar{
+    text-align: center;
+     margin-top: 5px;
+   
+}
+
+.ess div {
+  text-align: center;
+}
+.ess input{
+    border-color: transparent;
+    border-radius:10px ;
+    
+    
+}
+.ess h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(89, 115, 126);
+}
+.username{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.username input{
+    border-color:transparent;
+    border-radius:10px ;
+}

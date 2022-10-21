@@ -1,0 +1,136 @@
+
+.users{
+    width: 100%;
+padding: 10px;
+}
+.users img{
+    width: 40px;
+}
+.users div{
+ margin: 5px;
+}
+.user1{
+  
+    border-radius: 20px;
+    width: 90%;
+    background-color: rgb(85, 154, 182);
+}
+.user1 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: rgb(214, 205, 205);
+}
+.user1 div{
+    display: inline-block;
+}
+.user3{
+    border-radius: 20px;
+    width: 90%;
+    background-color: rgb(85, 154, 182);
+}
+.user3 div{
+    display: inline-block;
+}
+.user3 h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-decoration: none;
+color: rgb(214, 205, 205);
+}
+.user1:hover{
+    transition: all 1s;
+    width: 91%;
+    height: 100px;
+}
+.user3:hover{
+    transition: all 0.5s;
+width: 91%;
+height: 100px;
+}
+
+
+
+
+
+    
+    
+
+
+
+
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+  
+#icone {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+#icone img{
+  width: 40px;
+}
+#check{
+	display: none;
+	background-color: #f00;
+}
+
+.barra{
+    background-color: rgb(89, 115, 126);
+	height: 100%;
+	width: 200px;
+    opacity: 0.9;
+	position: absolute;
+	left: -200px;
+	transition: all .2s linear;
+}
+
+.link{
+	list-style: none;
+	
+}
+
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+
+}
+
+.link {
+	margin: 5px;
+    
+}
+.link h1{
+     color: #4e4e50;
+		font-size: 40px;
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.link h1:hover{
+    color: #2d2d2e;
+}
+#check:checked ~ .barra nav a .link{
+	    opacity: 1;
+        
+		margin-top: 0;
+		transition-delay: .1s;
+}
+#check:checked ~ .barra{
+		transform: translateX(200px);
+
+}
+
+nav ul{
+    list-style: none;
+}
+body{
+    background-color: rgb(89, 115, 126);
+}
+
+

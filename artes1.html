@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/math.css">
+   <link rel="stylesheet" href="css/appBar.css">
+   <link rel="shortcut icon" href="images/Icones/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <!-- App Bar -->
+        <div class="appbar">      
+            <input type="checkbox" id="check">
+            <label for="check" id="icone"><img src="images/Icones/cardapio.png"/></label>
+            <div class="barra">	
+                <nav>
+                    <div>
+                    <ul>
+                  <li> <a href="Home.html"><div class="link"><h1>Home</h1></div></a></li>
+                   <li> <a href="chat.html"><div class="link"><h1>chat</h1></div></a></li>
+                    <li><a href="quests.html"><div class="link"><h1>Quiz</h1></div></a></li>
+                </ul>
+                </div>
+                </nav>	
+            </div>
+        <div class="title"><h1>
+            Aulas</h1></div>
+        </div>
+        <!-- App Bar -->
+       
+       
+
+    </div><nav>        
+
+
+</nav></header>
+<div class="container">
+
+   
+
+   <input type="text" placeholder="procurar aulas" id="search-box">
+
+   <div class="image-container">
+    <div class="image" data-title="Matemática">
+        <iframe src="https://www.youtube.com/embed/ddZHkCUcYRM?"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>        
+        <h3>Matemática</h3>
+     </div>
+     <div class="image" data-title="Física">
+        <iframe  src="https://www.youtube.com/embed/L0tDWm8QfCU"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>   
+
+        <h3>Física</h3>
+        
+     </div>
+     <div class="image" data-title="Probabilidade">
+        <iframe src="https://www.youtube.com/embed/8g571hUvgeo" title="YouTube video player" frameborder="0" allow="accecelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>        
+        <h3>Probabilidade</h3>
+     </div>
+     <div class="image" data-title="Trigonometria">
+        <iframe src="https://www.youtube.com/embed/4sTUs4ll3dI" title="YouTube video player" frameborder="0" allow="accecelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>        
+        <h3> trigonometria</h3>
+     </div>
+     <div class="image" data-title="Angulos">
+        <iframe  src="https://www.youtube.com/embed/0CnUdzmpO8E" title="YouTube video player" frameborder="0" allow="acccelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe>        
+        <h3>Angulos</h3>
+     </div>
+      <div class="image" data-title="Acentuação"> 
+        <iframe  src="https://www.youtube.com/embed/Sy_LUnePfRE" title="YouTube video player" frameborder="0" allow="acccelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe><h3>acentuação Gráfica</h3></div>
+
+      <div class="image" data-title="Química"><iframe  src="https://www.youtube.com/embed/1s7wIV3ohyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe><h3>Química</h3></div>
+       <div class="image" data-title="Morfologia"><iframe  src="https://www.youtube.com/embed/-7oMt-shGWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe><h3>Morfologia</h3></div> 
+       <div class="image" data-title="Estados brasileiros"><iframe  src="https://www.youtube.com/embed/7WhWTDfLaxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe><h3>Estados brasileiros</h3> </div>      
+       <div class="image" data-title="História do Brasil"><iframe  src="https://www.youtube.com/embed/amV13tcqti8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture" frameborder="0"></iframe><h3>História do Brasil</h3></div>       
+  </div> </div>
+
+
+</div>
+
+<script>
+
+let searchBox = document.querySelector('#search-box');
+let images = document.querySelectorAll('.container .image-container .image');
+
+searchBox.oninput = () =>{
+   images.forEach(hide => hide.style.display = 'none');
+   let value = searchBox.value; 
+   images.forEach(filter =>{
+      let title = filter.getAttribute('data-title');
+ 
+      if(value == title){
+         filter.style.display = 'block';
+      }
+      if(searchBox.value == ''){
+         filter.style.display = 'block';
+      }
+   });
+};
+
+</script>
